@@ -1,20 +1,24 @@
 package Xshore1;
 
-import static org.junit.Assert.assertTrue;
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 
-import org.junit.Test;
+import Xshore.App;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
+
+
+
+public class AppTest extends App
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+	@Test(priority = 1)
+	public void doLogin() throws InterruptedException {
+		
+		driver.findElement(By.id("onetrust-accept-btn-handler")).click();
+		System.out.println("click on accept Cookies");
+		Thread.sleep(2000);
+		
+		driver.findElement(By.id("downaerrow")).click();
+		System.out.println("click on down arrow");
+		Thread.sleep(2000);
+	}
 }
