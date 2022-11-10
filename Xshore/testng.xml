@@ -2,7 +2,7 @@
 <suite parallel="false" name="Suite">
   <test name="Test">
     <classes>
-      <class name="Xshore.App"/>
+      <class name="Xshore.AppTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
