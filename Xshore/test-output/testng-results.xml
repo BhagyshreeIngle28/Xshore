@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-10T09:59:49 IST" name="Default suite" finished-at="2022-11-10T10:00:40 IST" duration-ms="50589">
+  <suite started-at="2022-11-10T10:43:16 IST" name="Default suite" finished-at="2022-11-10T10:44:22 IST" duration-ms="65095">
     <groups>
     </groups>
-    <test started-at="2022-11-10T09:59:49 IST" name="Default test" finished-at="2022-11-10T10:00:40 IST" duration-ms="50589">
-      <class name="Xshore.App">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Xshore.App@47987356]" started-at="2022-11-10T09:59:49 IST" name="setup" finished-at="2022-11-10T10:00:35 IST" duration-ms="46234" status="PASS">
+    <test started-at="2022-11-10T10:43:16 IST" name="Default test" finished-at="2022-11-10T10:44:22 IST" duration-ms="65095">
+      <class name="Xshore1.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Xshore1.AppTest@6283d8b8]" started-at="2022-11-10T10:43:17 IST" name="setup" finished-at="2022-11-10T10:44:17 IST" duration-ms="60598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="doLogin()[pri:1, instance:Xshore.App@47987356]" started-at="2022-11-10T10:00:35 IST" name="doLogin" finished-at="2022-11-10T10:00:40 IST" duration-ms="4295" status="PASS">
+        <test-method signature="doLogin()[pri:1, instance:Xshore1.AppTest@6283d8b8]" started-at="2022-11-10T10:44:17 IST" name="doLogin" finished-at="2022-11-10T10:44:22 IST" duration-ms="4437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-      </class> <!-- Xshore.App -->
+      </class> <!-- Xshore1.AppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
