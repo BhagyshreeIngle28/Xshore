@@ -10,9 +10,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
-public class App 
-{
+public class App {
 	public WebDriver driver;
 
 	@BeforeTest
@@ -21,29 +19,52 @@ public class App
 		driver = new ChromeDriver();
 		System.out.println("Chrome Browser Opened");
 		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://xshore.com/xshore-1");
 		Thread.sleep(3000);
-		
+
 	}
 
 	@Test(priority = 1)
-	public void doLogin() throws InterruptedException {
-		
+	public void Openwebsite() throws InterruptedException {
+
 		driver.findElement(By.id("onetrust-accept-btn-handler")).click();
 		System.out.println("click on accept Cookies");
 		Thread.sleep(2000);
-		
-		driver.findElement(By.id("downaerrow")).click();
-		System.out.println("click on down arrow");
-		Thread.sleep(2000);
-	}
-	
-	
-		
-		
-	
-	}
-	
 
+	}
+
+	@Test(priority = 2)
+	public void eelex8000() throws InterruptedException {
+
+		driver.findElement(By.xpath("//button[@type='button']//img")).click();
+		System.out.println("click on Menu");
+		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//*[@id='html-body']/div[3]/header/div[2]/div[1]/ul/div/li[1]/a")).click();
+		System.out.println("click on eelex800");
+		Thread.sleep(3000);
+	}
+
+	@Test(priority = 3)
+	public void SeaTrialandDesignOrder() throws InterruptedException {
+
+		driver.findElement(By.xpath("//*[@id='html-body']/div[3]/header/div[1]/div[2]/div/div[2]/div/ul/li/a[contains(text(),'Sea Trial')]"))
+				.click();
+		System.out.println("click on SeaTrial Menu");
+		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//button[@type='button']//img")).click();
+		System.out.println("click on Menu");
+		Thread.sleep(2000);
+		
+		
+		driver.findElement(By.xpath("//*[@id='html-body']/div[3]/header/div[2]/div[1]/ul/div/li[3]/a")).click();
+		System.out.println("click on Design & Order");
+		Thread.sleep(2000);
+		
+		
+	}
+
+}
