@@ -78,9 +78,19 @@ public class App {
 		System.out.println("click on Menu");
 		Thread.sleep(2000);
 		
+		
 		driver.findElement(By.xpath("//*[@id='html-body']/div[3]/header/div[2]/div[1]/ul/div/li[5]/a")).click();
 		System.out.println("click on Technology");
 		Thread.sleep(2000);
+		
+	
+		
+		
+	
 	}
+	
+	
+	
 
 }
+
